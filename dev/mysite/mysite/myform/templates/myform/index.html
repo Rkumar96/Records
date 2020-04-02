@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+	<title>Customer Form</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body>
+	<!-- <h2>Customer Form</h2>
+	<form action="" method="post">
+		{% csrf_token %}
+		{{form}}
+		<input type="submit">
+	</form> -->
+	 
+    <form class="box" action="" method="post" >
+    	<h1>Customer Form</h1>
+        {% csrf_token %}
+        {{form}}
+       
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+	
+</body>
+</html>

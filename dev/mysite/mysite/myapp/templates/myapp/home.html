@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Product</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+<body>
+        <header>
+            <div class="main">
+            <div class="logo">
+                <img src="{% static '/images/logo.jpg' %}">
+            </div>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'dashboard' %}">Dashboard</a></li>
+                
+                </ul>
+             </div>
+            
+            <form class="box" action="" method="post" >
+                {% csrf_token %}
+                <h1>product</h1>
+                <input type="text" id="item" name="item" placeholder="Item">
+                <input type="text" id="price" name="price" placeholder="Price">
+                <input type="date" id="c_date" name="c_date">
+                <input type="submit" value="Submit"/>
+            </form>
+    
+
+        </header>
+</body>
+<hr>
+
+<footer>
+
+    <div class=fot>copyright to kumarrhl87@gmail</div>
+
+</footer>
+</html>
